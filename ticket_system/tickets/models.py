@@ -23,7 +23,7 @@ class Ticket(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    def str(self):
+    def __str__(self):
         return f"{self.title} - {self.user.username}"
 
     class Meta:
@@ -36,7 +36,7 @@ class TicketResponse(models.Model):
     text = models.TextField(verbose_name='متن پاسخ')
     created_at = models.DateTimeField(auto_now_add=True)
 
-    def str(self):
+    def __str__(self):
         return f"Response to {self.ticket.title} by {self.user.username}"
 
     class Meta:
