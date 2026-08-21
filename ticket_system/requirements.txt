@@ -1,0 +1,5 @@
+Django==6.0.6
+djangorestframework==3.15.2
+djangorestframework-simplejwt==5.3.1
+django-filter==24.3
+Pillow==10.0.0  # برای پشتیبانی از تصاویر (در صورت نیاز)
